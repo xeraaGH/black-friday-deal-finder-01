@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bargain Lantern — Black Friday Deal Finder 2026</title>
+<meta name="description" content="44 real Black Friday and Cyber Monday deals, each price-checked on 27 Nov 2026 at its store, with an honest verdict on whether it is really a deal.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <p class="brand"><span class="lantern" aria-hidden="true">🏮</span> Bargain Lantern</p>
+    <p class="tagline">Black Friday &amp; Cyber Monday deals, checked by hand — no inflated “was” prices, no filler.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="stats" aria-label="Deal summary">
+    <div class="stat"><strong id="stat-deals">–</strong><span>deals checked</span></div>
+    <div class="stat"><strong id="stat-true-lows">–</strong><span>true lows</span></div>
+    <div class="stat"><strong id="stat-best">–</strong><span>biggest discount</span></div>
+    <div class="stat"><strong id="stat-stores">–</strong><span>stores</span></div>
+    <div class="stat"><strong id="stat-cats">–</strong><span>categories</span></div>
+  </section>
+  <p class="checked-line" id="checked-line"></p>
+
+  <section id="list-view">
+    <div class="toolbar" role="search">
+      <label>Search <input id="search" type="search" placeholder="Try “AirPods”, “TV”, “Dyson”…"></label>
+      <label>Category
+        <select id="category"><option value="All">All categories</option></select>
+      </label>
+      <label>Store
+        <select id="store"><option value="All">All stores</option></select>
+      </label>
+      <label>Min. discount
+        <select id="min-discount">
+          <option value="">Any discount</option>
+          <option value="25">25% off or more</option>
+          <option value="40">40% off or more</option>
+          <option value="50">50% off or more</option>
+        </select>
+      </label>
+      <label>Verdict
+        <select id="verdict">
+          <option value="All">Any verdict</option>
+          <option value="true-low">True low</option>
+          <option value="strong">Strong deal</option>
+          <option value="routine">Routine sale</option>
+        </select>
+      </label>
+      <label>Sort by
+        <select id="sort">
+          <option value="discount">Biggest discount</option>
+          <option value="verdict">Best verdict first</option>
+          <option value="saving">Biggest saving ($)</option>
+          <option value="price-low">Lowest price</option>
+          <option value="price-high">Highest price</option>
+        </select>
+      </label>
+      <button id="clear-filters" type="button">Clear filters</button>
+    </div>
+    <p class="count-line" id="count-line"></p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="detail" hidden></section>
+
+  <section class="method">
+    <h2>How we check a deal</h2>
+    <p>Every price on this page was read on 27 November 2026 from the store named on the card, or from a deals roundup that names that store and its price. The discount is worked out from the two prices shown, so it always adds up. Each deal carries a verdict:</p>
+    <ul>
+      <li><strong>True low</strong> — the lowest price we could find for it this year, with the evidence on the card.</li>
+      <li><strong>Strong deal</strong> — a solid cut on a current product.</li>
+      <li><strong>Routine sale</strong> — a small cut, or a better price at another store listed here. Check before you buy.</li>
+    </ul>
+    <p>Where the same product is cheaper at another store, the detail page compares them side by side, cheapest first. Store links open the product at that store in a new tab. Prices move during Black Friday week — always confirm at the store before you pay.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Bargain Lantern — an independent deal finder for Black Friday &amp; Cyber Monday 2026. Not affiliated with any store named here. Store names belong to their owners.</p>
+  </div>
+</footer>
+<script type="module" src="/main.js"></script>
+</body>
+</html>
